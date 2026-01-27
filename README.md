@@ -8,7 +8,7 @@ Memória Local é um aplicativo web que usa **OCR (reconhecimento óptico de car
 ## Tecnologias utilizadas
 
 - **Python 3.11** – linguagem de programação usada para desenvolver o aplicativo e integrar todas as funcionalidades.  
-- **Flask** – framework web leve que permite criar o servidor e as páginas do aplicativo.  
+- **Flask** – framework web que permite criar o servidor e as páginas do aplicativo.  
 - **Pillow** – biblioteca para abrir, processar e manipular imagens dentro do Python.  
 - **pytesseract** – biblioteca Python que faz a ponte entre o Python e o Tesseract, permitindo extrair texto de imagens.  
 - **Tesseract-OCR** – motor de reconhecimento óptico de caracteres que lê imagens e transforma os textos nelas em texto digital pesquisável.
@@ -26,7 +26,7 @@ Memória Local é um aplicativo web que usa **OCR (reconhecimento óptico de car
 
 ## Instalação
 
-1. Clone o repositório:
+1. Clone o repositório.
 
 2. Crie um ambiente virtual: python -m venv venv
 
