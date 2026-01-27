@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Memória Local</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f1ec;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+    }
+    pre {
+      background: white;
+      padding: 15px;
+      margin-top: 20px;
+      white-space: pre-wrap;
+    }
+    mark {
+      background: yellow;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Memória Local</h1>
+<p style="text-align:center;">Raízes Urbanas da nossa história</p>
+
+<form method="POST" enctype="multipart/form-data">
+  <input type="file" name="image" required>
+  <button type="submit">Ler documento histórico</button>
+</form>
+
+{% if text %}
+<hr>
+
+<input
+  type="text"
+  id="searchInput"
+  placeholder="Buscar palavra no documento"
+  oninput="searchText()"
+/>
+
+<h3>Texto reconhecido:</h3>
+<pre id="textOutput">{{ text }}</pre>
+
+<script>
+  const originalText = `{{ text | safe }}`;
+
+  function searchText() {
+    const query = document.getElementById("searchInput").value.trim();
+    const output = document.getElementById("textOutput");
+
+    if (!query) {
+      output.innerHTML = originalText;
+      return;
+    }
+
+    const regex = new RegExp(`(${query})`, "gi");
+    output.innerHTML = originalText.replace(regex, "<mark>$1</mark>");
+  }
+</script>
+{% endif %}
+
+</body>
+</html>
