@@ -10,7 +10,7 @@ Em um mundo cada vez mais digital, muitos desses registros ainda permanecem inac
 
 É nesse contexto que surge o Memória Local, como uma forma de aproximar o passado do presente, utilizando a tecnologia para transformar registros históricos em informação viva, pesquisável e acessível.
 
-Porque no fim aquilo que não pode ser acessado se perde com o tempo. Conectar o passado ao presente é dar continuidade à nossa história presente nas ruas, nos documentos e na vida das cidades.
+Tudo aquilo que não pode ser acessado se perde com o tempo. Conectar o passado ao presente é dar continuidade à nossa história presente nas ruas, nos documentos e na vida das cidades.
 
 ---
 
